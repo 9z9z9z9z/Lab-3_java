@@ -1,0 +1,28 @@
+<component name="libraryTable">
+  <library name="angus-activation">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/angus-activation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jakarta.activation-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jakarta.xml.bind-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.annotation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.ejb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.jms.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.persistence.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.resource.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jsp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.transaction.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/javax.xml.bind.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jaxb-core.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jaxb-impl-4.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jaxb-impl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jaxb-jxc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jaxb-xjc.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/jaxb-xjc.jar!/" />
+    </SOURCES>
+  </library>
+</component>
