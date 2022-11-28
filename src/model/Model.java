@@ -18,11 +18,9 @@ public class Model {
         user ("user");
 
         private final String name;
-
         private Groups(String name){
             this.name = name;
         }
-
         public boolean equalsName(String otherName){
             return name.equals(otherName);
         }
@@ -55,12 +53,10 @@ public class Model {
         try {
             getConfigFile(usersFile, usersProp);
         } catch (Exception e) {
-            throw new RuntimeException();
+            e.printStackTrace();
         }
-
         loadUsers();
         loadCurrentUsers();
-
         boolean flag = true;
         if (!loadUserConfig()){
             int function = View.menu(View.Menus.auth);
@@ -326,7 +322,6 @@ public class Model {
 
             props.load(filestream);
 
-            //View
             assert  filestream != null;
             filestream.close();
         } catch (Exception FNex){
