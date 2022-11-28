@@ -32,7 +32,7 @@ public class App {
 
         while (isRunning) {
             if (model.getGroup().equals(Model.Groups.admin.toString())) {
-                int function = View.menu(View.Menus.developer);
+                int function = View.menu(View.Menus.admin);
 
                 switch (function) {
                     case 1:

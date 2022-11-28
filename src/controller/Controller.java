@@ -25,7 +25,7 @@ public class Controller {
 		    	}
 		    }
 	}
-	public String inputString(String msg) {
+	public static String inputString(String msg) {
 		while (true)
 		{
 			Scanner sc = new Scanner(System.in);
@@ -36,7 +36,7 @@ public class Controller {
 			}
 		}
 	}
-	public int inputInt(String mes){
+	public static int inputInt(String mes){
 		System.out.println(mes);
 	        while (true){
 	            Scanner sc = new Scanner(System.in);
@@ -47,7 +47,7 @@ public class Controller {
 	    }
 	}
 	
-	public ColoredLinen inputLinen(){
+	public static ColoredLinen inputLinen(){
 	    System.out.println("=========================================\n");
 	    int tempW = inputInt("Input temperature of washing\n");
 	    int tempI = inputInt("Input temperature of ironing\n");
@@ -55,7 +55,7 @@ public class Controller {
 	    ColoredLinen ans = new ColoredLinen(tempW, tempI, color);
 	    return  ans;
 	}
-	public WashingMachine inputWS() {
+	public static WashingMachine inputWS() {
 	    int num = inputInt("Input number of linens\n");
 	    int temp = inputInt("Input temperature of machine");
 	    Color color = inputColor();

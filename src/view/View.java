@@ -9,7 +9,7 @@ import java.util.List;
 public class View {
     public enum Menus {
         auth,
-        developer,
+        admin,
         user
     }
     private static List<String> authMenu = new ArrayList<String>(Arrays.asList(
@@ -70,24 +70,25 @@ public class View {
     public static void send_warning(String message) {
         System.out.println(ANSI_CYAN + "WARNING" + " : " + message + ANSI_RESET);
     }
-    static Controller ctrl;
+    
+    Controller ctrl = new Controller(null, null);
     public static int menu(Menus menu_type) {
         int user_choice = 0;
         switch (menu_type) {
             case auth:
                 for (String item: authMenu)
                     System.out.println(item);
-                user_choice = ctrl.inputInt(">> ");
+                user_choice = Controller.inputInt(">> ");
                 break;
-            case developer:
+            case admin:
                 for (String item: adminMenu)
                     System.out.println(item);
-                user_choice = ctrl.inputInt(">> ");
+                user_choice = Controller.inputInt(">> ");
                 break;
             case user:
                 for (String item: userMenu)
                     System.out.println(item);
-                user_choice = ctrl.inputInt(">> ");
+                user_choice = Controller.inputInt(">> ");
                 break;
         }
 
@@ -98,7 +99,7 @@ public class View {
         String text = "";
         for (String item: laundry_info)
             text += item + "\n";
-        int user_choice = ctrl.inputInt(text);
+        int user_choice = Controller.inputInt(text);
 
         switch (user_choice) {
             case 1:

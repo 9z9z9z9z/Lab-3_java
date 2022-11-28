@@ -14,7 +14,7 @@ import java.util.*;
 public class Model {
     Controller ctrl;
     public enum Groups{
-        admin ("administrator"),
+        admin ("admin"),
         user ("user");
 
         private final String name;
@@ -52,6 +52,7 @@ public class Model {
         }
         try {
             getConfigFile(usersFile, usersProp);
+            getConfigFile(configFile, configProp);
         } catch (Exception e) {
             e.printStackTrace();
         }
